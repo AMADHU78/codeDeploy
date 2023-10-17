@@ -110,33 +110,19 @@ public class PangramChecker {
 
 
 function reverseWords(sentence) {
-  
-  const words = sentence.split(' ');
-
-  
-  const reversedWords = words.map(reverseWord);
-
-  
-  const reversedSentence = reversedWords.join(' ');
-
-  return reversedSentence;
+const words = sentence.split(' ');
+const reversedWords = words.map(reverseWord);
+const reversedSentence = reversedWords.join(' ');
+return reversedSentence;
 }
-
 function reverseWord(word) {
-  
-  const wordArray = word.split('');
-
-  
-  const reversedArray = wordArray.reverse();
-
-  
-  return reversedArray.join('');
+const wordArray = word.split('');
+const reversedArray = wordArray.reverse();
+return reversedArray.join('');
 }
-
 // Example usage:
 const inputSentence = 'This is a sunny day in JavaScript';
 const reversedSentence = reverseWords(inputSentence);
-
 console.log('Original sentence: ' + inputSentence);
 console.log('Reversed sentence: ' + reversedSentence);
 
@@ -153,7 +139,6 @@ function sortArrayDescending(arr) {
     return 0;
  });
 }
-
 let array = [34, 56, 1, 98, 23, 54, 76, 34, 23, 76];
 console.log(sortArrayDescending(array));
 
